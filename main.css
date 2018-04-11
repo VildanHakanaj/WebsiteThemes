@@ -1,0 +1,342 @@
+/*
+GLOBAL VARIABLE AND STYLING
+font-family: 'Poppins', sans-serif;
+font-family: 'Poiret One', cursive;
+
+*/
+:root{
+    --primary: teal;
+    --white: #fff;
+    --black: #000;
+    --base-font-color: #555;
+    --card-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    --url: url(https://source.unsplash.com/1600x900/?dark,green,beach);
+}
+
+body{
+    font-family: 'Poppins', sans-serif; 
+    color: var(--base-font-color);
+}
+
+.container{
+    min-width: 900px;
+    width: 900px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: var(--base-font-color);
+    transition: .5s;
+}
+
+.btn{
+    padding: 0.5em 2rem;
+    border-radius: 50px;
+    color: #000;
+    color: #fff;
+    display: inline-block;
+    background-color: var(--primary);
+}
+
+.full{
+    padding: 0.5em 0;
+    width: 100%;
+    border-radius: 50px;
+    color: #000;
+    color: #fff;
+    display: inline-block;
+    background-color: var(--primary);
+}
+
+.hover-white:hover{
+    background-color: #fff;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.fa-4x{
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+
+.heading{
+    text-align: center;
+    font-size: 49px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.teal-text{
+    color: var(--primary);
+}
+
+/*============================
+        HEADER STYLING  
+================================*/
+header{
+    width: 100%;
+    background: var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*-------------Branding-----------------*/
+.branding{
+    color: #fff;
+}
+.branding h1{
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.branding p{
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+/*-----------------Menu---------------*/
+#menu{
+    line-height: 4;
+}
+#menu ul{
+    font-size: 0;
+}
+
+#menu a{
+    display: inline-block;
+    color: #fff;
+    padding: .5em 1em;
+    font-size: 1rem;
+    transition: .5s;
+    text-transform: uppercase;
+}
+
+#menu a:hover{
+    color: var(--primary);
+    background-color: #fff;
+}
+
+
+
+/*============================
+        BANNER STYLING  
+================================*/
+#banner{
+    width: 100%;
+    margin-top: 80px;
+    background-image: var(--url);
+    background-size: cover;
+    position: 50%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#slogan{
+    text-align: center;
+    color: #fff;
+    font-family: 'Poiret One', cursive;
+}
+
+#slogan h1{
+    font-size: 100px;
+}
+
+#slogan .buttons{
+    margin-top: 50px;
+}
+
+#slogan a{
+    transition: all .5s;
+}
+
+
+/*======================================
+            Services Styling
+========================================*/
+#services .container{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    padding: 3rem;
+}
+
+#services .card{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 10px 20px;
+    width: 600px;
+    text-align: center;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+#services .card p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#services .card h4{
+    font-size: 12px;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+#services .card h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#services .card a{
+    margin-top: 20px;
+    border: 1px solid var(--primary);
+}
+
+/*-==========-==========-==========-==========
+                GALLERY STYLING         
+-==========-==========-==========-==========*/
+#gallery{
+    width: 100%;
+    background-color: #333;
+    padding: 5em 0;
+    color: #fff;
+}
+
+#gallery .show{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#gallery img{
+    display: block;
+    max-width: 100%;
+}
+.cell {
+    width: 30%;
+    margin: 10px;
+  }
+.cell img {
+    display: block;
+  }
+
+  
+/*-==========-==========-==========-==========
+                FORM STYLING         
+-==========-==========-==========-==========*/
+
+#contact{
+    width: 100%;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 1em;
+}
+
+#contact h1, label{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#contact form{
+    width: 90%;
+    text-align: center;
+    padding: 1em;
+}
+
+#contact [type=text], textarea{
+    border: none;
+    border-bottom: 4px #fff solid;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    background-color: var(--primary);
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: .5em;
+    transition: 1s;
+}
+
+#contact a{
+    border: 1px #fff solid;
+    padding: 1em;
+    margin: 20px 0;
+    width: 100%;
+    background-color: #fff;
+    color: var(--primary);
+    transition: .5s;
+}
+
+#contact a:hover{
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+#contact label{
+    text-align: left;
+    width: 100%;
+}
+
+/*-==========-==========-==========-==========
+                SOCIAL STYLING         
+-==========-==========-==========-==========*/
+#social{
+    background-color: #333;
+    padding: 5em 0;
+    color: #fff;
+}
+
+.fa-facebook{
+    color: 	#3b5998;
+}
+
+.fa-snapchat{
+    color: 	#fffc00;
+}
+
+.fa-google-plus{
+    color: 	#d34836 ;
+}
+
+.fa-instagram{
+    color: 	#8a3ab9;
+}
+
+.fa-pinterest{
+    color:#cb2027;
+}
+
+.social-icons{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*-==========-==========-==========-==========
+                FOOTER STYLING         
+-==========-==========-==========-==========*/
+footer{
+    width: 100%;
+    padding: 5em 0;
+    color: #fff;
+    background-color: teal;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
