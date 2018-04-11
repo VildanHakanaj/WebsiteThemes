@@ -18,6 +18,11 @@ body{
     color: var(--base-font-color);
 }
 
+.wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+
 .container{
     min-width: 900px;
     width: 900px;
@@ -310,8 +315,12 @@ header .container{
 }
 
 .fa-instagram{
-    color: 	#8a3ab9;
-}
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: #fff;
+    border-radius: 10px;
+    padding: 3px 5px;
+    
+}   
 
 .fa-pinterest{
     color:#cb2027;
