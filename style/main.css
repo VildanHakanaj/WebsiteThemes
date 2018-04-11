@@ -5,12 +5,12 @@ font-family: 'Poiret One', cursive;
 
 */
 :root{
-    --primary: teal;
+    --primary: #6AAFE6;
     --white: #fff;
     --black: #000;
     --base-font-color: #555;
     --card-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    --url: url(https://source.unsplash.com/1600x900/?dark,green,beach);
+    --url: url(https://source.unsplash.com/1600x900/?dark,sky,blue);
 }
 
 body{
@@ -40,7 +40,7 @@ a{
     padding: 0.5em 2rem;
     border-radius: 50px;
     color: #000;
-    color: #fff;
+    color: var(--white);
     display: inline-block;
     background-color: var(--primary);
 }
@@ -50,13 +50,13 @@ a{
     width: 100%;
     border-radius: 50px;
     color: #000;
-    color: #fff;
+    color: var(--white);
     display: inline-block;
     background-color: var(--primary);
 }
 
 .hover-white:hover{
-    background-color: #fff;
+    background-color: var(--white);
     font-weight: 700;
     color: var(--primary);
 }
@@ -96,7 +96,7 @@ header .container{
 
 /*-------------Branding-----------------*/
 .branding{
-    color: #fff;
+    color: var(--white);
 }
 .branding h1{
     font-size: 38px;
@@ -118,7 +118,7 @@ header .container{
 
 #menu a{
     display: inline-block;
-    color: #fff;
+    color: var(--white);
     padding: .5em 1em;
     font-size: 1rem;
     transition: .5s;
@@ -127,7 +127,7 @@ header .container{
 
 #menu a:hover{
     color: var(--primary);
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 
@@ -150,7 +150,7 @@ header .container{
 
 #slogan{
     text-align: center;
-    color: #fff;
+    color: var(--white);
     font-family: 'Poiret One', cursive;
 }
 
@@ -172,7 +172,7 @@ header .container{
 ========================================*/
 #services .container{
     width: 100%;
-    background-color: #fff;
+    background-color: var(--white);
     display: flex;
     padding: 3rem;
 }
@@ -214,7 +214,7 @@ header .container{
     width: 100%;
     background-color: #333;
     padding: 5em 0;
-    color: #fff;
+    color: var(--white);
 }
 
 #gallery .show{
@@ -243,7 +243,7 @@ header .container{
 #contact{
     width: 100%;
     background-color: var(--primary);
-    color: #fff;
+    color: var(--white);
     padding: 1em;
 }
 
@@ -260,10 +260,10 @@ header .container{
 
 #contact [type=text], textarea{
     border: none;
-    border-bottom: 4px #fff solid;
+    border-bottom: 4px var(--white) solid;
     outline: none;
     font-size: 16px;
-    color: #fff;
+    color: var(--white);
     text-align: center;
     background-color: var(--primary);
     width: 100%;
@@ -274,11 +274,11 @@ header .container{
 }
 
 #contact a{
-    border: 1px #fff solid;
+    border: 1px var(--white) solid;
     padding: 1em;
     margin: 20px 0;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--white);
     color: var(--primary);
     transition: .5s;
 }
@@ -299,7 +299,7 @@ header .container{
 #social{
     background-color: #333;
     padding: 5em 0;
-    color: #fff;
+    color: var(--white);
 }
 
 .fa-facebook{
@@ -316,7 +316,7 @@ header .container{
 
 .fa-instagram{
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    color: #fff;
+    color: var(--white);
     border-radius: 10px;
     padding: 3px 5px;
     
@@ -341,8 +341,8 @@ header .container{
 footer{
     width: 100%;
     padding: 5em 0;
-    color: #fff;
-    background-color: teal;
+    color: var(--white);
+    background-color: var(--primary);
     font-size: 20px;
     text-align: center;
 }
